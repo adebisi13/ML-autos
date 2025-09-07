@@ -56,10 +56,28 @@ nav > ul {
 
 nav > ul > li > a {
     text-decoration: none;
+    display: flex;
     color: white;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    gap: 2px;
 }   
+
+.navBadges{
+    position: relative;
+    font-size: 0.75rem;
+}
+
+.navbadges{
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color:whitesmoke;
+  color: #000;
+  border-radius: 20%;
+  padding: 1px 5px;
+  font-size: 0.5rem;
+}
 
 .icons{
     flex: 1;
@@ -68,6 +86,21 @@ nav > ul > li > a {
     gap: 1rem;
     font-size: 1rem;
     color: white;
+}
+.yellow{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color:silver;
+    color: black;
+    border-radius: 50%;
+    padding: 1px 3px;
+    font-size: 0.6rem;
 }
 
 .secOne{
@@ -369,6 +402,41 @@ nav > ul > li > a {
 .product-card img {
   width: 100%;
   border-radius: 8px;
+}
+
+.imgBadge{
+  position: relative;
+}
+
+.imgbadge{
+  position: absolute;
+  top: -2px;
+  right: 3px;
+  color: silver;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.Imgbadge{
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: red;
+  color: #000;
+  padding: 4px 10px;
+  font-size: 0.6rem;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+}
+.Imgdadge{
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: green;
+  color: #e5e5e5;
+  padding: 4px 10px;
+  font-size: 0.6rem;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
 }
 
 .product-card:hover {

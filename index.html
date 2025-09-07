@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ML Autos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -16,9 +18,15 @@
         <nav>
             <ul>
                 <li><a href="#home">Home <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                <li><a href="#shop">Shop <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                <li><a href="#products">products <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                <li><a href="#Review">Review <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+               <div class="navBadges"> <li><a href="#shop">Shop <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                <div class="navbadges">SALE</div>
+                </div>
+                <div class="navBadges"><li><a href="#products">products <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                <div class="navbadges">NEW</div>
+                  </div>
+               <div class="navBadges"><li><a href="#Review">Review <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                <div class="navbadges">Hot</div>
+                </div>
                 <li><a href="#pages">pages <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                 <li><a href="#Blog">Blog</a></li>
                 <li><a href="#contact">Contact us</a></li>
@@ -30,7 +38,11 @@
             <i class="fa-regular fa-user"></i>
             <div class="yellow">
             <i class="fa-solid fa-heart"></i>
+            <div class="badge">0</div>
+            </div>
+            <div class="yellow">
             <i class="fa-solid fa-bag-shopping"></i>
+             <div class="badge">0</div>
             </div>
         </div>
     </header>
@@ -196,71 +208,109 @@
   <div class="product-grid">
     <!-- Product Card -->
     <div class="product-card">
-      <img src="img.folder/download a.jpeg" alt="Car 1">
+      <div class="imgBadge">
+        <img src="img.folder/download a.jpeg" alt="Car 1">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-15%</div>
+      </div>
       <h3 class="car-name">Mercedes-Benz C-Class</h3>
       <p class="car-price">$45,000</p>
+      <div class="old">$51,750</div>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download b.webp" alt="Car 2">
+     <div class="imgBadge"><img src="img.folder/download b.webp" alt="Car 2">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-25%</div>
+      </div>
       <h3 class="car-name">BMW 3 Series</h3>
       <p class="car-price">$48,500</p>
+      <div class="old">$60,625</div>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download c.jpg" alt="Car 3">
+      <div class="imgBadge"><img src="img.folder/download c.jpg" alt="Car 3">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgdadge">new</div>
+      </div>
       <h3 class="car-name">Audi A4</h3>
       <p class="car-price">$42,000</p>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download d.jpg" alt="Car 4">
+      <div class="imgBadge"><img src="img.folder/download d.jpg" alt="Car 4">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-21%</div>
+      </div>
       <h3 class="car-name">Lexus IS</h3>
       <p class="car-price">$40,000</p>
+      <div class="old">$48,400</div>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download e.jpg" alt="Car 5">
+      <div class="imgBadge"><img src="img.folder/download e.jpg" alt="Car 5">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-10%</div>
+        </div>
       <h3 class="car-name">Tesla Model 3</h3>
       <p class="car-price">$55,000</p>
+      <div class="old">$60,500</div>
     </div>
 
     <!-- Second row -->
     <div class="product-card">
-      <img src="img.folder/download f.jpg" alt="Car 6">
+      <div class="imgBadge"><img src="img.folder/download f.jpg" alt="Car 6">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-20%</div>
+        </div>
       <h3 class="car-name">Jaguar XE</h3>
       <p class="car-price">$47,000</p>
+      <div class="old">$56,400</div>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/images.jpeg" alt="Car 7">
+      <div class="imgBadge"><img src="img.folder/images.jpeg" alt="Car 7">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgdadge">new</div>
+        </div>
       <h3 class="car-name">Infiniti Q60</h3>
       <p class="car-price">$44,000</p>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download g.jpg" alt="Car 8">
+      <div class="imgBadge"><img src="img.folder/download g.jpg" alt="Car 8">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-12%</div>
+      </div>
       <h3 class="car-name">Genesis G70</h3>
       <p class="car-price">$39,500</p>
+      <div class="old">$42,300</div>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download h.jpg" alt="Car 9">
+      <div class="imgBadge"><img src="img.folder/download h.jpg" alt="Car 9">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgdadge">new</div>
+      </div>
       <h3 class="car-name">Volvo S60</h3>
       <p class="car-price">$46,000</p>
     </div>
 
     <div class="product-card">
-      <img src="img.folder/download i.jpg" alt="Car 10">
+      <div class="imgBadge"><img src="img.folder/download i.jpg" alt="Car 10">
+        <div class="imgbadge"><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div class="Imgbadge">-18%</div>
+        </div>
       <h3 class="car-name">Alfa Romeo Giulia</h3>
       <p class="car-price">$50,000</p>
+      <div class="old">$57,900</div>
     </div>
   </div>
 </section>
 
 </section>
 
-<!-- ===== Review Section ===== -->
+<!-- ===== Review Section =====
 <section class="review-section" id="Review">
   <h2>What Our Clients Say</h2>
   
@@ -271,14 +321,14 @@
       No wonder it’s one of the best-selling cars in their collection."
     </p>
     
-    <!-- Star Rating Image -->
+    Star Rating Image
     <img src="img.folder/5str.png" alt="5 Stars" class="stars" width="100rem">
 
     <h3 class="reviewer-name">Alexander Ball</h3>
     <p class="reviewer-location">New York</p>
   </div>
 
-  <!-- Navigation Dots -->
+  Navigation Dots
   <div class="review-dots">
     <span class="dot active"></span>
     <span class="dot"></span>
@@ -286,7 +336,75 @@
   </div>
 
   <p class="review-footer">Trusted customers are our pride. <a href="#">Contact us</a></p>
+</section> -->
+
+<!-- ===== Review Section ===== -->
+<section class="review-section bg-dark text-light py-5" id="Review">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner text-center">
+        <!-- Review 1 -->
+        <div class="carousel-item active">
+          <img src="img.folder/1-intro-photo-final.jpg" alt="Client Photo" class="rounded-circle mb-3" width="120">
+          <p class="fst-italic px-3">
+            "This car is beyond expectations — smooth drive, stylish design, and excellent performance. 
+            No wonder it’s one of the best-selling cars in their collection."
+          </p>
+          <img src="img.folder/5str.png" alt="5 Stars" class="d-block mx-auto mb-2" width="100">
+          <h3 class="h5">Alexander Ball</h3>
+          <p class="text-muted">New York</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="carousel-item">
+          <img src="https://media.istockphoto.com/id/1496613385/photo/smiling-confident-latin-woman-looking-at-camera.jpg?s=612x612&w=0&k=20&c=rDn837m8OMd_uN8_hduEScGzARZznKFWfn45kQJ2j7A=" alt="Client Photo" class="rounded-circle mb-3" width="120">
+          <p class="fst-italic px-3">
+            "Absolutely love the experience. Reliable cars and excellent customer support. 
+            Highly recommended for anyone looking for quality."
+          </p>
+          <img src="img.folder/5str.png" alt="5 Stars" class="d-block mx-auto mb-2" width="100">
+          <h3 class="h5">Sophia Lee</h3>
+          <p class="text-muted">Los Angeles</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="carousel-item">
+          <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="Client Photo" class="rounded-circle mb-3" width="120">
+          <p class="fst-italic px-3">
+            "Top-notch performance with unbeatable comfort. 
+            This has been my best car purchase ever!"
+          </p>
+          <img src="img.folder/5str.png" alt="5 Stars" class="d-block mx-auto mb-2" width="100">
+          <h3 class="h5">James Carter</h3>
+          <p class="text-muted">Chicago</p>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <p class="text-center mt-4 review-footer">
+      Trusted customers are our pride. <a href="#" class="text-info">Contact us</a>
+    </p>
+  </div>
 </section>
+
 
 <!-- ===== Blog Section ===== -->
 <section class="blog-section" id="Blog">
@@ -302,9 +420,9 @@
       <img src="img.folder/images (1).jpeg" alt="Blog Post">
       <h3>The Future of Electric Cars</h3>
       <div class="blog-meta">
-        <span><i class="fa fa-calendar"></i> 03 Sep</span>
+        <span><i class="fa fa-calendar"></i> 03 <br> Sep</span>
         <span><i class="fa fa-user"></i> Admin</span>
-        <span><i class="fa fa-comments"></i> 5 Comments</span>
+        <span><i class="fa fa-comments"></i> 5 <br>Comments</span>
       </div>
     </div>
 
@@ -403,6 +521,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
