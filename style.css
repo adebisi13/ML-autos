@@ -61,7 +61,20 @@ nav > ul > li > a {
     font-weight: 600;
     font-size: 0.75rem;
     gap: 2px;
-}   
+}    
+
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon hidden on wide screens */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+ 
 
 .navBadges{
     position: relative;
@@ -790,4 +803,78 @@ nav > ul > li > a {
     .icons{
         justify-content: center;
     }
+}
+
+/* ----------  Responsive Layout  ---------- */
+
+/* Medium screens – tablets */
+@media (max-width: 992px) {
+  /* Navigation */
+  .hamburger {
+    display: block;               /* show burger */
+  }
+  nav > ul {
+    display: none;                 /* hide links by default */
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;                     /* just below header */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  /* when checkbox is ticked show menu */
+  .menu-toggle:checked + .hamburger + ul {
+    display: flex;
+  }
+
+  /* hero */
+  .secOne {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  .imgOne img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* product grids – 2 or 3 across */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small screens – phones */
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+  .header {
+    gap: 10px;
+    padding: 10px;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+  .carTalk,
+  .shii {
+    flex-direction: column;
+    text-align: center;
+  }
+  .jet {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
