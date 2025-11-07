@@ -37,13 +37,13 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     justify-content: space-between;
     align-items: center;  
     margin-bottom: 20px;    
-    background-color: black;
+    /* background-color: black;/ */
     gap: 50px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;        
-    background: black;   
+    /* background: black;    */
     padding: 15px;
     z-index: 1000;   
 }
@@ -70,6 +70,36 @@ nav > ul > li > a {
     font-size: 0.75rem;
     gap: 2px;
 }    
+
+/* === Theme Variables === */
+:root {
+  --bg-color: #000;
+  --text-color: #c0c0c0;
+  --card-bg: #111;
+  --card-text: #c0c0c0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Card Styling */
+.product-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.light-mode {
+  --bg-color: #d5d5d5;
+  --text-color: #0a0808;
+  --card-bg: #dfdede;
+  --card-text: #000;
+}
+
 
 .menu-toggle {
   display: none;
@@ -175,7 +205,7 @@ nav > ul > li > a {
   justify-content: center;
   gap: 30px;
   padding: 60px 20px;
-  background: #000; /* black background */
+  /* background: #000; black background */
 }
 
 .card {
@@ -213,7 +243,7 @@ nav > ul > li > a {
 
 .products-section {
   padding: 50px 5%;
-  background: #000; /* black background */
+  /* background: #000; */
   color: #f5f5f5;   /* light silver text */
   text-align: center;
 }
@@ -358,7 +388,7 @@ nav > ul > li > a {
     flex: 1;
     margin: 4rem 0rem;
     padding-bottom: 4rem;
-    background-image: url("img.folder/writer.avif");
+    background-image: url("img.folder/writer.avif.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -390,7 +420,7 @@ nav > ul > li > a {
 }
 /* ===== Car Products Section ===== */
 .car-products {
-  background-color: #000; /* Black background */
+  /* background-color: #000; Black background */
   color: #ccc; /* Light metallic gray text */
   padding: 50px 20px;
   text-align: center;
@@ -480,7 +510,7 @@ nav > ul > li > a {
 
 /* ===== Review Section ===== */
 .review-section {
-  background: url('img.folder/bkgrnd.jpg') no-repeat center center/cover;
+  background: url('img.folder/bckgrnd.png') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -563,7 +593,7 @@ nav > ul > li > a {
 /* ===== Blog Section ===== */
 .blog-section {
   padding: 60px 20px;
-  background-color: #000; /* black background */
+  /* background-color: #000; black background */
   color: #fff;
   text-align: center;
 }
@@ -633,7 +663,7 @@ nav > ul > li > a {
 
 /* ===== Footer Section ===== */
 .footer {
-  background:black;
+  /* background:black; */
   color: #eee;
   text-align: center;
   padding: 50px 20px 20px;

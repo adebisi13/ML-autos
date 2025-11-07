@@ -41,6 +41,12 @@
                 <li><a href="#">Buy Themes!</a></li>
                 </ul>
         </nav>
+
+        <!-- Dark/Light Mode Toggle Button -->
+<button id="theme-toggle" class="btn btn-outline-light">
+  <i id="theme-icon" class="bi bi-moon-fill"></i>
+</button>
+
         
         <div class="icons">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -60,7 +66,7 @@
     <section id="home">
         <div class="secOne">
             <div class="imgOne">
-                <img src="img.folder/bllll.jpg" alt="" width="700rem">
+                <img src="img.folder/bllll.png" alt="" width="700rem">
             </div>
             <div class="banner">
                 <h3>Welcome to our autospace</h3>
@@ -349,7 +355,7 @@
 </section> -->
 
 <!-- ===== Review Section ===== -->
-<section class="review-section bg-dark text-light py-5" id="Review">
+<section class="review-section " id="Review">
   <div class="container">
     <h2 class="text-center mb-4">What Our Clients Say</h2>
 
@@ -540,5 +546,30 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Car Details Modal -->
+<div class="modal fade" id="carModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carName"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="carImage" class="img-fluid mb-3 rounded" alt="Car image">
+        <p id="carPrice"></p>
+        <ul id="carSpecs" class="list-unstyled mb-4"></ul>
+        <form id="purchaseForm" action="https://formspree.io/f/xyzbrjzb" method="POST">
+          <input type="hidden" name="car" id="formCarName">
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Request Purchase</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
